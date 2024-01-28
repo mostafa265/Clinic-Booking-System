@@ -1,0 +1,11 @@
+<% layout('layouts/boilerplate')%>
+
+<form action="/printer" method="POST">
+  <label for="pages">Files pages</label>
+  <input type="number" id="pages" name="pages" required />
+
+  <label for="sheetNumber">Sheet per page</label>
+  <input type="number" id="sheetNumber" name="sheetNumber" required />
+
+  <button type="submit">Count</button>
+</form>

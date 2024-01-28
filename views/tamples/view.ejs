@@ -1,0 +1,8 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container">
+  <h3><%= foundDoctor.name %></h3>
+  <p>Open at 4PM</p>
+  <p><%- foundDoctor.properties.popUpMarkup %></p>
+  <p><%= foundDoctor.description %></p>
+</div>

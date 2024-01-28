@@ -1,0 +1,316 @@
+Server started on port 3001
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Pages: 8
+sheetNumber: 2
+current user: undefined
+req.query: {}
+Pages: 8
+sheetNumber: 2
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+MongooseError
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Pages: 49
+sheetNumber: 2
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Pages: 9
+sheetNumber: 2
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Pages: 20
+sheetNumber: 2
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Server started on port 3001
+OH NO ERROR!!!!
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:788:11)
+    at NativeConnection.openUri (D:\Web development\Clinic_Schedule\node_modules\mongoose\lib\connection.js:763:11) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+Error
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+undefined
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError
+current user: undefined
+req.query: {}
+undefined
+current user: undefined
+req.query: {}
+current user: undefined
+req.query: {}
+MongooseError

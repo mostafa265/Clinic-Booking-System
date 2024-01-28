@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate')%>
+
+<h3><%= foundPatient.doctor.name %></h3>
+<ul>
+  <li><b>Age:</b> <%= foundPatient.doctor.specialize %></li>
+  <li><b>Phone_Number:</b> <%= foundPatient.doctor.phoneNumber[0] %></li>
+  <li><b>Address:</b> <%= foundPatient.doctor.address %></li>
+</ul>
+------------------------------------------------
+<div>
+  <b>name: </b>
+  <%= foundPatient.name %> |
+  <b>Age:</b>
+  <%= foundPatient.age %> |
+  <b>Gender:</b>
+  <%= foundPatient.gender %>
+  <br />
+  <b>Phone_Number:</b>
+  <%= foundPatient.phoneNumber %> |
+  <b>Address:</b>
+  <%= foundPatient.address %>
+</div>
+------------------------------------------------ <% for (let v of
+foundPatient.visties) {%>
+<ul>
+  <b><%= v.date %></b>
+  <li><b>name: </b><%= v.medicine[0].medicineName %></li>
+  <li><b>function: </b><%= v.medicine[0].function %></li>
+  <li><b>useTimes: </b><%= v.medicine[0].useTimes %></li>
+</ul>
+<% } %>

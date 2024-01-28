@@ -1,0 +1,219 @@
+<% layout('layouts/boilerplate')%>
+
+<!-- <h1 class="text-center">DOCTOR PAGE</h1> -->
+<% if (foundDoctor) { %> <% console.log("heelllllllooo", foundDoctor) %>
+
+<div class="d-flex justify-content-evenly">
+  <form
+    action="/doctors/<%= foundDoctor._id %>/edit?_method=PUT"
+    method="POST"
+    class="needs-validation"
+    novalidate
+  >
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value="<%= foundDoctor.name %>"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="specialize">Specialize</label>
+        <input
+          type="text"
+          id="specialize"
+          name="specialize"
+          value="<%= foundDoctor.specialize %>"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="number"
+          name="phoneNumber"
+          value="<%= foundDoctor.phoneNumber %>"
+          id="phoneNumber"
+          placeholder="First phone"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Please enter a phone-number.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="phoneNumber2">Phone Number 2</label>
+        <input
+          type="number"
+          name="phoneNumber2"
+          value="<%= foundDoctor.phoneNumber[1] %>"
+          id="phoneNumber2"
+          placeholder="Second phone"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="address">Address</label>
+        <input
+          type="text"
+          id="address"
+          value="<%= foundDoctor.address %>"
+          name="address"
+          class="form-control"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <div class="btn-group" role="group">
+          <button type="submit" class="btn btn-primary">Save edit</button>
+          <a href="/admin/doctors" class="btn btn-secondary">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- ------------------------------------------------- -->
+
+<% } else { %>
+<div><%= message %></div>
+<div class="d-flex justify-content-evenly">
+  <form
+    action="/admin/doctors/new"
+    method="POST"
+    class="needs-validation"
+    novalidate
+  >
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="specialize" class="form-label">Specialize</label>
+        <input
+          type="text"
+          id="specialize"
+          name="specialize"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="phoneNumber" class="form-label">Phone Number</label>
+        <input
+          type="number"
+          name="phoneNumber"
+          id="phoneNumber"
+          placeholder="First phone"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Please enter a phone-number.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="phoneNumber2" class="form-label">Phone Number 2</label>
+        <input
+          type="number"
+          name="phoneNumber2"
+          id="phoneNumber2"
+          placeholder="Second phone"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" id="address" name="address" class="form-control" />
+      </div>
+    </div>
+
+    <div class="mb-3 col-2">
+      <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+</div>
+
+<% } %>
+
+<!-- /////////////////////////////////////////////////////// -->
+
+<table class="table">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Specialize</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Address</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% let x = 0 %> <% for(let d of doctors) { %>
+    <tr>
+      <th scope="row"><%= x = x + 1 %></th>
+      <td colspan="1">
+        <a href="/doctors/<%= d._id %>/show"><%= d.name %></a>
+      </td>
+      <td><%= d.specialize %></td>
+      <td><%= d.phoneNumber[0] %></td>
+      <td><%= d.address %></td>
+      <td>
+        <form
+          action="/doctors/<%= d._id %>/edit"
+          method="POST"
+          class="d-inline"
+        >
+          <button type="submit" class="btn btn-info btn-sm">Edit</button>
+        </form>
+        <form
+          action="/doctors/<%=d._id%>/delete?_method=delete"
+          method="POST"
+          class="d-inline"
+        >
+          <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<!-- <a href="/patients/new" class="btn btn-primary">Add patient</a> -->

@@ -1,0 +1,49 @@
+<% layout('layouts/boilerplate')%>
+
+<h3><%= foundPatient.name %></h3>
+<ul>
+  <li><b>Age:</b> <%= foundPatient.age %></li>
+  <li><b>Gender:</b> <%= foundPatient.gender %></li>
+  <li><b>Phone_Number:</b> <%= foundPatient.phoneNumber %></li>
+  <li><b>Address:</b> <%= foundPatient.address %></li>
+</ul>
+<% for (let v of foundPatient.visties) {%>
+<ul>
+  <b><%= v.date %></b>
+  <li><b>name: </b><%= v.medicine[0].medicineName %></li>
+  <li><b>function: </b><%= v.medicine[0].function %></li>
+  <li><b>useTimes: </b><%= v.medicine[0].useTimes %></li>
+</ul>
+----------------------------------------------------------- <% } %>
+
+<form
+  action="/doctors/<%= foundDoctor._id%>/<%= foundPatient._id %>/treatment"
+  method="Post"
+>
+  <label for="medicine">Medicine</label>
+  <!-- <select name="name" id="medicine">
+    </% for (let medicine of foundDoctor.medicine) { %> //there is (/) in the begining of ejsout, remove it if you want to use it.
+    <option value="</%= medicine %>"></%= medicine %></option>
+    </% } %> // Here also (/)
+  </select> -->
+
+  <label for="medicineName">Name</label>
+  <input type="text" id="medicineName" name="medicineName" />
+
+  <label for="function">Function</label>
+  <input type="text" id="function" name="function" />
+
+  <label for="useTimes">Use times</label>
+  <input type="number" id="useTimes" name="useTimes" />
+  <button type="submit">Add</button>
+</form>
+
+<a href="/patients/<%= foundPatient._id %>/edit">Edit</a>
+<form
+  action="/patients/<%=foundPatient._id %>/delete?_method=delete"
+  method="POST"
+>
+  <button>Delete</button>
+</form>
+
+<a href="/doctors/<%= foundDoctor._id %>/show">Back</a>

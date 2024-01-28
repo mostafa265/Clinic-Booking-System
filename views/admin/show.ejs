@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate')%>
+
+<h3><%= foundPatient.name %></h3>
+<ul>
+  <li><b>Age:</b> <%= foundPatient.age %></li>
+  <li><b>Gender:</b> <%= foundPatient.gender %></li>
+  <li><b>Phone_Number:</b> <%= foundPatient.phoneNumber %></li>
+  <li><b>Address:</b> <%= foundPatient.address %></li>
+</ul>
+
+<table class="table">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Specialize</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% let x = 0 %> <% for(let d of doctors) { %>
+    <tr>
+      <th scope="row"><%= x = x + 1 %></th>
+      <td colspan="1">
+        <a href="/patients/<%= d._id %>/details"><%= d.doctor.name %></a>
+      </td>
+      <td><%= d.doctor.specialize %></td>
+      <td><%= d.doctor.phoneNumber %></td>
+      <td><%= d.doctor.address %></td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
+<a href="/admin/patients/<%= foundPatient._id %>/edit">Edit this</a>
+<form
+  action="/patients/<%=foundPatient._id %>/delete?_method=delete"
+  method="POST"
+>
+  <button>Delete</button>
+</form>
+
+<a href="/admin/patients">All patients</a>
