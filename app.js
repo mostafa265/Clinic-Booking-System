@@ -179,8 +179,7 @@ app.use("/", patientRoutes);
 // Home route //
 let hello = "Hello World";
 app.get("/", (req, res) => {
-  hello = "Hello insid get";
-  res.send("Hello World!");
+  res.redirect("/login");
 });
 
 // Not Found Route Middleware //
